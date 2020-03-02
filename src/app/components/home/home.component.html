@@ -1,0 +1,27 @@
+<div class="container">
+    <div *ngIf="showWeather">
+        <div *ngFor="let each of lat; let i = index" class="row weatherRow">
+            <div class="col-md-6">
+                <p>The current weather in: <b>{{city[i]}}, {{country[i]}}</b></p>
+                <p><b>Outlook: </b>{{description[i]}}</p>
+                <p><b>Temperature: </b>{{temp[i]}} &deg;F</p>
+                <p><b>Feels Like: </b>{{windChill[i]}} &deg;F</p>
+                <p><b>Humidity: </b>{{humidity[i]}}%</p>
+                <p><b>Wind: </b>{{wind[i]}}mph</p>
+            </div>
+            <div class="col-md-6">
+                <span> Where map would be if I could figure it out</span>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 15px; margin-bottom: 15px;">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" style="text-align: center;">
+            <input type="text" id="num" (focusout)="onBlur($event)" style="margin-right: 5px;">
+            <button class="weatherBtn" (click)="getWeather()" *ngIf="!showWeather">Get Some Weather</button>
+            <button class="weatherBtn" (click)="getWeather()" *ngIf="showWeather">Get Some More Weather</button>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+

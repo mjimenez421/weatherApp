@@ -1,0 +1,104 @@
+/* ------------ BASE ------------- */
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+li{
+    line-height: 1.9;
+}
+p {
+    margin-bottom: 20px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+iframe, embed, img {
+    max-width: 100%;
+    border: none;
+}    
+
+/* Typography */
+
+body {
+    margin: 0;
+    line-height: 1.9em;
+    color: #787d82;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #222222;
+    font-family: sans-serif;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    font-weight: inherit;
+}
+h1 {
+    font-size: 36px;
+    line-height: 1.6;
+}
+h2 {
+    font-size: 24px;
+    line-height: 1.6;
+}
+h3 {
+    font-size: 18px;
+    line-height: 1.6;
+}
+h4 {
+    font-size: 16px;
+    line-height: 1.6;
+}
+h5 {
+    font-size: 14px;
+    line-height: 1.6;
+}
+h6 {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+strong {
+    font-weight: bold;
+}
+
+ul{
+    list-style: square outside;
+}
+
+/* 02. Links and Form */
+
+a{
+    outline: 0;
+    color: #1e73be;
+    text-decoration: none;
+}
+
+a h3{
+    color: #1e73be;
+}
+
+a:hover,
+a:focus {
+    outline: 0;
+    color: #666666;
+    text-decoration: none;
+}
